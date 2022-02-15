@@ -1,0 +1,37 @@
+ <main class="holder">
+        <div class="columna left">
+            <h2>Contactenos</h2>
+            <form action="/contactenos" method="post" class="formulario">
+                <p>
+                    <label for="">Nombre</label>
+                    <input type="text" name="nombre"/>
+                </p>
+                <p>
+                    <label for="">Email</label>
+                    <input type="text" name="email"/>
+                </p>
+                <p>
+                     <label for="">Teléfono</label>
+                    <input type="text" name="tel"/>
+                </p>
+                <p>
+                    <label for="comentario">Comentario</label>
+                    <textarea id="comentario" name="comentarios"></textarea>
+                </p>
+                <p class="acciones"><input type="submit" value="Enviar"></p>
+            </form>
+            {{#if message}}
+            <p>{{message}}</p>
+            {{/if}}
+        </div>
+        <div class="columna right">
+            <h2>Otras medios</h2>
+            <ul>
+                <li>Teléfono: 4578-7894</li>
+                <li>Email: contacto@artgallery.com.ar</li>
+                <li>Facebook:</li>
+                <li>Twitter:</li>
+                <li>Skype:</li>
+            </ul>
+        </div>
+    </main>

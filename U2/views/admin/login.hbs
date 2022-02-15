@@ -1,0 +1,21 @@
+<div class="contanier" style="margin:100px auto">
+    <div class="row">
+            <form action="/admin/login" method="post">
+            <div class="mb-3 row">
+                <div class="col-sm-10">
+                    <input type="text" name="usuario" class="form-control" placeholder="Usuario">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña" name="password">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+            </form>
+            {{#if error}}
+                <p>Usuario y/o password incorrectos</p>
+            {{/if}}
+      
+    </div>
+</div>
