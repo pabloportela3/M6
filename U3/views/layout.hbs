@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="stylessheets/normalize.css">
+    <link rel="stylesheet" href="stylesheets/sitio.css">
+
+</head>
+<body>
+    <header>
+        <div class="holder">    
+            <a href="/nosotros"><img src="images/logo/imagen.jpg" width="100" alt="Transportes X"></a>
+            <h1>Art Gallery</h1>
+        </div>           
+    </header>
+    <nav>
+        <div class="holder">
+            <ul>
+                <li><a class= "{{#if isHome}}activo {{/if}}" href="/">Home</a></li> 
+                <li><a class= "{{#if isNosotros}}activo {{/if}}" href="/nosotros">Nosotros</a></li>
+                <li><a class= "{{#if isGaleria}}activo {{/if}}" href="/Galeria">Galeria</a></li>
+                <li><a class= "{{#if isNovedades}}activo {{/if}}" href="/Novedades">Novedades</a></li>
+                <li><a class= "{{#if isContactenos}}activo {{/if}}" href="/Contactenos">Contactenos</a></li>
+                <li><a class= "{{#if isRegistro}}activo {{/if}}" href="/Registro">Registro</a></li>
+            </ul>
+        </div>  
+    </nav>
+  <body>
+    {{{body}}}
+
+     <footer>
+        <p>&copy;Art Gallery</p>
+    </footer>
+  </body>
+  
+</html>
